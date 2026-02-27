@@ -9,7 +9,7 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    let tempurature: number = input.temperature()
+    const tempurature: number = input.temperature()
     let tempuratureKelvin: number
     tempuratureKelvin = Math.round(tempurature + 273.15)
 
