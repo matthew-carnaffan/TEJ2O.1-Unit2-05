@@ -10,8 +10,7 @@ basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
     const tempurature: number = input.temperature()
-    let tempuratureKelvin: number
- tempuratureKelvin += Math.round(tempurature + 273.15)
+    const tempuratureKelvin: number = Math.round(tempurature + 273.15)
 
     basic.showString('The current temperature is ' + (tempuratureKelvin).toString() + 'k.')
     
